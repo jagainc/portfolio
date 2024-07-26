@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=  , initial-scale=1.0">
+    <title>personal portfolio website </title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/03c4f87b04.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div  id="header">
+       <div class="container">
+        <nav>
+            <img src="image.png" alt="logo" class="logo">
+       <ul id="sidemenu">
+        <li><a href="#header">Home</a></li>
+        <li><a href="#about">about</a></li>
+        <li><a href="#services">services</a></li>
+        <li><a href="#portfolio">portfolio</a></li>
+        <li><a href="#contact">contact</a></li>
+        <i class="fa-regular fa-circle-xmark" onclick="closemenu()"></i>
+       </ul>
+       <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <center>
+            <h1><span>Hi</span>,<br>I'm Jagadeesh</h1>
+            <p>front-end developer</p>
+        </center>
+
+        </div>
+       </div>
+    </div>
+    <!------- about------------------>
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="20240217134908_IMG_6919.JPG" alt="">
+                </div>
+          <div class="about-col-2">
+                    <h1 class="subtitle">About Me</h1>
+                    <p class="para"> I am a front end developer based in Chennai. <br>
+                        <br>With a passion for web development, I specialize in UI/UX designing and have experience in HTML,CSS,JS. <br>
+
+                        <br> My expertise lies in Designing, Creativity and problem solving skills<br>
+                       
+                        <br>  I am currently studying B-tech in Information Technology at SRM Valliammai engineering college where I developed a strong foundation in web dev. Outside of work, I enjoy drawing portraits and am always eager to learn and grow both personally and professionally.<br>
+                       
+                        <br>  Feel free to explore my portfolio and reach out if you'd like to collaborate or simply connect!</p>
+                 <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('Experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('Education')">Education</p>
+                </div>
+                       <div class="tab-contents active-tab" id="skills"> <ul>
+                        <li><span>UI/UX</span><br>designing web app interface</li>
+                        <li><span>Web development</span><br>Web app development</li>
+                        <li><span>App development</span><br>building ios/android apps</li>
+                       </ul></div>
+                      
+                
+               <div class="tab-contents" id="Experience"> <ul>
+
+                        <li><span>2024</span><br>I worked on a chatbot project based on Javascript (Morpheus).</li>
+                        <li><span>2024</span><br>attended an AR/VR workshop at SSN Engineering College,Chennai.</li>
+                        <li><span>2024</span><br>attended a linux based workshop at CIT,Chennai</li>
+                       </ul></div>
+                      
+                <div class="tab-contents" id="Education"> <ul>
+                        <li><span>2024</span><br>certification of Linux Terminal (udemy).</li>
+                        <li><span>2024</span><br>certification of mastery in Javascript (udemy).</li>
+                        <li><span>2022-2026</span><br>B-TECH (Information Technology) at SRM Valliammai Engineering College.</li>
+                       </ul></div>
+                       
+                </div> 
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<!---------------services------------->
+<div id="services">
+    <div class="container">
+<h1 class="sub-title">My services</h1> 
+    <div class="services-list">
+        <div>
+            <i class="fa-solid fa-code"></i>
+            <h2>Web Design</h2><br>
+            <p>I specialize in crafting exceptional websites that not only look stunning but also provide an outstanding user experience.comprehensive range of services ensures that all your web design needs are covered.</p>
+            <a href="#">Learn more</a>
+        </div>
+        <div>
+            <i class="fa-solid fa-crop"></i>
+            <h2>UI/UX Design</h2><br>
+            <p> I prioritize the end-user in every project. By understanding user needs and behaviors, I create designs that are not only visually appealing but also highly functional and user-friendly.</p>
+            <a href="#">Learn more</a>
+        </div>
+        <div>
+            <i class="fa-brands fa-app-store"></i>
+            <h2>App Design</h2><br>
+            <p>In today's digital age, a well-designed app can make a significant difference in user engagement and satisfaction. I specialize in creating intuitive, visually appealing, and user-friendly app designs that meet the needs of both businesses and their users.</p>
+            <a href="#">Learn more</a>
+        </div>
+        </div>
+    </div>
+</div>
+<!-- ---------------portfolio-------- -->
+ <div id="portfolio">
+    <div class="container">
+            <h1 class="subtitle">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="image copy 1.png">
+                    <div class="layer">
+                        <h3>Music App</h3>
+                        <p>The app provides you digital music service that gives you access to millions of songs.
+                            Download it from play store/Appstore.</p>
+                            <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="image copy 2.png"  >
+                    <div class="layer">
+                        <h3>Social Media App</h3>
+                        <p>The app connects you to the talented people around the world.
+                            Download it from play store.</p>
+                            <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="image copy 3.png" >
+                    <div class="layer">
+                        <h3>Online Shopping App</h3>
+                        <p>The app allows you to shop online.
+                            Download it from play store.</p>
+                            <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+             </div>
+             <a href="#" class="btn">See More </a>
+        </div>
+    </div>
+    <!-- ......................contact....... -->
+     <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact me</h1>
+                    <p><i class="fa-regular fa-paper-plane"></i> Jagadeeshwaranps2005@gmail.com</p>
+                    <p><i class="fa-solid fa-square-phone"></i> 7305580875</p>
+                    <div class="social-icons">
+                      <a href="https://www.facebook.com/jagadeeshwaran.jagadeeshwaran.5036/"><i class="fa-brands fa-facebook"></i></a>
+                      <a href="https://x.com/Jagadeesh_inc"><i class="fa-brands fa-square-x-twitter"></i></a>
+                      <a href="https://www.instagram.com/j4gad3esh/"><i class="fa-brands fa-instagram"></i></a>
+                      <a href="https://www.linkedin.com/in/jagadeeshwaran-p-s"><i class="fa-brands fa-linkedin"></i></a>   
+                    </div>
+                    <a href="" download class="btn btn2">Download cv</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your email" required>
+                    <textarea name="Message" rows="6" placeholder="Your message"></textarea>
+                    <button type="submit" class="btn btn2">submit</button>
+                </form>
+                <span id="msg"></span>
+                </div>            
+            </div>
+        </div>
+    </div>
+        <div class="copyright">
+            <p>copyright © Jagadeesh.</p>
+        </div>
+<script src="script.js"></script>
+</body>
+</html>
