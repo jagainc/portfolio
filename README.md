@@ -39,5 +39,4 @@ For any questions or feedback, please contact me at:
 Email: jagadeeshwaranps2005@gmail.com.com
 LinkedIn: https://www.linkedin.com/in/jagadeeshwaran-p-s/
 Twitter: https://x.com/Jagadeesh_inc
-preview: https://jagadeesh05.neocities.org/portfolio/
 Thank you for visiting my portfolio
