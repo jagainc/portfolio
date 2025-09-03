@@ -2,15 +2,43 @@ My Portfolio
 Welcome to my portfolio website! This project showcases my skills and projects in UI/UX design and app development. Built using HTML, CSS, and JavaScript, the site is designed to be dynamic, responsive, and user-friendly.
 
 Features:
-Responsive Design: The site is optimized for various devices, ensuring a seamless experience on desktops, tablets, and smartphones.
-Smooth Animations: Engaging animations enhance user interaction without compromising performance.
-Clean Layout: The minimalist design highlights the content and makes navigation intuitive.
-Project Showcase: Detailed sections for each project, including descriptions, images, and links to live demos or repositories.
-Contact Form: Easy-to-use contact form for potential clients or collaborators to reach out.
+🎨 **Modern Design**: Sleek, professional design with video background and particle effects
+📱 **Responsive Design**: Optimized for all devices - desktop, tablet, and mobile
+✨ **Advanced Animations**: AOS (Animate On Scroll) library for smooth, engaging animations
+⚡ **Interactive Elements**: 
+  - Particle.js interactive background
+  - Typing animation for dynamic text
+  - Animated skill progress bars
+  - Portfolio filtering system
+  - Testimonials slider
+🎯 **Enhanced UX**: 
+  - Smooth scrolling navigation
+  - Floating action buttons
+  - Theme toggle functionality
+  - Loading animations
+  - Cursor trail effects
+📊 **Statistics Section**: Animated counters showcasing achievements
+💬 **Testimonials**: Client feedback carousel
+🎨 **Visual Effects**: Glowing text, hover animations, and gradient backgrounds
+📧 **Contact Form**: Google Sheets integration for form submissions
 Technologies Used
-HTML: For structuring the content.
-CSS: For styling and layout.
-JavaScript: For interactivity and dynamic content.
+🔧 **Core Technologies:**
+- **HTML5**: Semantic structure and accessibility
+- **CSS3**: Advanced styling with animations, gradients, and responsive design
+- **JavaScript (ES6+)**: Interactive functionality and dynamic content
+
+📚 **Libraries & Frameworks:**
+- **Particles.js**: Interactive particle background effects
+- **AOS (Animate On Scroll)**: Scroll-triggered animations
+- **Typed.js**: Dynamic typing animations
+- **Font Awesome**: Professional icons
+- **Google Fonts**: Custom typography
+
+🎨 **Design Features:**
+- CSS Grid & Flexbox for responsive layouts
+- CSS animations and transitions
+- Backdrop filters and glassmorphism effects
+- Custom scrollbars and hover effects
 Installation
 Clone the repository:
 

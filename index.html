@@ -2,17 +2,30 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=  , initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>personal portfolio website </title>
     <link rel="icon" href="logo-color.png" >
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/03c4f87b04.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cossette+Texte:wght@400;700&display=swap" rel="stylesheet">
+    <!-- Particles.js for interactive background -->
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <!-- AOS Animation Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- Typed.js for typing animation -->
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
 </head>
 <body>
-    <div  id="header">
+    <div id="header">
+        <video autoplay loop muted playsinline class="background-video">
+           <source src="Background.mp4" type="video/mp4">
+        </video>
        <div class="container">
         <nav>
-            <img src="image.png" alt="logo" class="logo">
+            <div class="logo-text">JAGA-DEVed</div>
        <ul id="sidemenu">
         <li><a href="#header">Home</a></li>
         <li><a href="#about">about</a></li>
@@ -24,46 +37,40 @@
        <i class="fa-solid fa-bars" onclick="openmenu()"></i>
         </nav>
         <div class="header-text">
-            <center>
             <h1><span>Hi</span>,<br>I'm Jagadeesh</h1>
-            <p>front-end developer</p>
-        </center>
-
+            <p><span id="typed-text"></span></p>
+            <div class="scroll-indicator">
+                <div class="scroll-arrow"></div>
+            </div>
         </div>
+        <!-- Particles container -->
+        <div id="particles-js"></div>
        </div>
     </div>
     <!------- about------------------>
     <div id="about">
         <div class="container">
             <div class="row">
-                <div class="about-col-1">
-                    <img src="20240217134908_IMG_6919.JPG" alt="">
+                <div class="about-col-1" data-aos="fade-right" data-aos-duration="1000">
+                    <img src="20240217134908_IMG_6919.JPG" alt="A photo of Jagadeesh">
                 </div>
-          <div class="about-col-2">
+          <div class="about-col-2" data-aos="fade-left" data-aos-duration="1000">
                     <h1 class="subtitle">About Me</h1>
-                    <p class="para"> I am a front end developer based in Chennai. <br>
-                        <br>With a passion for web development, I specialize in UI/UX designing and have experience in HTML,CSS,JS. <br>
-
-                        <br> My expertise lies in Designing, Creativity and problem solving skills<br>
-                       
-                        <br>  I am currently studying B-tech in Information Technology at SRM Valliammai engineering college where I developed a strong foundation in web dev. Outside of work, I enjoy drawing portraits and am always eager to learn and grow both personally and professionally.<br>
-                       
-                        <br>  Feel free to explore my portfolio and reach out if you'd like to collaborate or simply connect!</p>
+                    <p class="para"> I’m a passionate developer who loves turning complex ideas into simple, functional solutions. I build web and native applications, design clean, user-friendly interfaces, and explore the power of AI through prompt engineering to create smarter software. With a strong foundation in both front-end and back-end development, I enjoy crafting applications that are not only technically sound but also a pleasure to use. Continuous learning drives me—I’m always looking for new tools, frameworks, and techniques to stay ahead in an ever-evolving tech landscape.</p>
                  <div class="tab-titles">
                         <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
                         <p class="tab-links" onclick="opentab('Experience')">Experience</p>
                         <p class="tab-links" onclick="opentab('Education')">Education</p>
                 </div>
                        <div class="tab-contents active-tab" id="skills"> <ul>
-                        <li><span>UI/UX</span><br>designing web app interface</li>
-                        <li><span>Web development</span><br>Web app development</li>
-                        <li><span>App development</span><br>building ios/android apps</li>
+                        <li><span>Prompt Engineering</span><br>Crafting effective prompts for AI models</li>
+                        <li><span>Python</span><br>Developing backend applications and scripts</li>
+                        <li><span>Java (Spring Boot)</span><br>Building robust enterprise-level applications</li>
                        </ul></div>
                       
                 
                <div class="tab-contents" id="Experience"> <ul>
-
-                        <li><span>2024</span><br>I worked on a chatbot project based on Javascript (Morpheus).</li>
+                        <li><span>2024</span><br>3 years experience on using ai models and prompt engineering</li>
                         <li><span>2024</span><br>attended an AR/VR workshop at SSN Engineering College,Chennai.</li>
                         <li><span>2024</span><br>attended a linux based workshop at CIT,Chennai</li>
                        </ul></div>
@@ -83,82 +90,137 @@
 <!---------------services------------->
 <div id="services">
     <div class="container">
-<h1 class="sub-title">My services</h1> 
-    <div class="services-list">
-        <div>
-            <i class="fa-solid fa-code"></i>
-            <h2>Web Design</h2><br>
-            <p>I specialize in crafting exceptional websites that not only look stunning but also provide an outstanding user experience.comprehensive range of services ensures that all your web design needs are covered.</p>
-            <a href="#">Learn more</a>
-        </div>
-        <div>
-            <i class="fa-solid fa-crop"></i>
-            <h2>UI/UX Design</h2><br>
-            <p> I prioritize the end-user in every project. By understanding user needs and behaviors, I create designs that are not only visually appealing but also highly functional and user-friendly.</p>
-            <a href="#">Learn more</a>
-        </div>
-        <div>
-            <i class="fa-brands fa-app-store"></i>
-            <h2>App Design</h2><br>
-            <p>In today's digital age, a well-designed app can make a significant difference in user engagement and satisfaction. I specialize in creating intuitive, visually appealing, and user-friendly app designs that meet the needs of both businesses and their users.</p>
-            <a href="#">Learn more</a>
-        </div>
+        <h1 class="sub-title" data-aos="fade-up">My Services</h1> 
+        <div class="services-list">
+            <div data-aos="fade-up" data-aos-delay="100">
+                <i class="fa-solid fa-code"></i>
+                <h2>Web Development</h2>
+                <p>I offer full-stack web development services, creating responsive and dynamic websites using modern technologies like React, Node.js, and various database solutions. From front-end design to back-end functionality, I build robust and scalable web applications tailored to your needs.</p>
+                <a href="#" class="service-link">Learn more</a>
+            </div>
+            <div data-aos="fade-up" data-aos-delay="200">
+                <i class="fa-solid fa-crop"></i>
+                <h2>UI/UX Design</h2>
+                <p>I prioritize the end-user in every project. By understanding user needs and behaviors, I create designs that are not only visually appealing but also highly functional and user-friendly.</p>
+                <a href="#" class="service-link">Learn more</a>
+            </div>
+            <div data-aos="fade-up" data-aos-delay="300">
+                <i class="fa-brands fa-app-store"></i>
+                <h2>App Development</h2>
+                <p>I develop high-quality mobile applications for various platforms, focusing on performance, user experience, and robust functionality. From concept to deployment, I build native and cross-platform apps that deliver seamless and engaging experiences.</p>
+                <a href="#" class="service-link">Learn more</a>
+            </div>
         </div>
     </div>
 </div>
 <!-- ---------------portfolio-------- -->
  <div id="portfolio">
     <div class="container">
-            <h1 class="subtitle">My Work</h1>
+            <h1 class="subtitle" data-aos="fade-up">My Work</h1>
+            <div class="portfolio-filter" data-aos="fade-up" data-aos-delay="100">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="web">Web Apps</button>
+                <button class="filter-btn" data-filter="ai">AI Projects</button>
+                <button class="filter-btn" data-filter="mobile">Mobile Apps</button>
+            </div>
             <div class="work-list">
-                <div class="work">
+                <div class="work" data-category="web ai" data-aos="zoom-in" data-aos-delay="100">
                     <img src="image copy 1.png">
                     <div class="layer">
-                        <h3>Music App</h3>
-                        <p>The app provides you digital music service that gives you access to millions of songs.
-                            Download it from play store/Appstore.</p>
-                            <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                        <h3>GITSCROLL</h3>
+                        <p>GitScroll: Your Code, Reimagined. The social feed for developers.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">React</span>
+                            <span class="tech-tag">Node.js</span>
+                            <span class="tech-tag">MongoDB</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/jagainc/gitscroll" target="_blank"><i class="fa-brands fa-github"></i></a>
+                            <a href="#" target="_blank"><i class="fa-solid fa-external-link-alt"></i></a>
+                        </div>
                     </div>
                 </div>
-                <div class="work">
-                    <img src="image copy 2.png"  >
+                <div class="work" data-category="ai" data-aos="zoom-in" data-aos-delay="200">
+                    <img src="image copy 2.png">
                     <div class="layer">
-                        <h3>Social Media App</h3>
-                        <p>The app connects you to the talented people around the world.
-                            Download it from play store.</p>
-                            <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                        <h3>AI Call Receptionist</h3>
+                        <p>This app speaks on behalf of the user as a virtual AI receptionist</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">OpenAI</span>
+                            <span class="tech-tag">Flask</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/jagainc/ai-call-receptionist" target="_blank"><i class="fa-brands fa-github"></i></a>
+                            <a href="#" target="_blank"><i class="fa-solid fa-external-link-alt"></i></a>
+                        </div>
                     </div>
                 </div>
-                <div class="work">
-                    <img src="image copy 3.png" >
+                <div class="work" data-category="mobile web" data-aos="zoom-in" data-aos-delay="300">
+                    <img src="image copy 3.png">
                     <div class="layer">
-                        <h3>Online Shopping App</h3>
-                        <p>The app allows you to shop online.
-                            Download it from play store.</p>
-                            <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                        <h3>Ecom Seller App</h3>
+                        <p>This app helps sellers to monitor their sales and analytics.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">React Native</span>
+                            <span class="tech-tag">Firebase</span>
+                            <span class="tech-tag">Chart.js</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/jagainc/ecom-seller-app" target="_blank"><i class="fa-brands fa-github"></i></a>
+                            <a href="#" target="_blank"><i class="fa-solid fa-external-link-alt"></i></a>
+                        </div>
                     </div>
                 </div>
              </div>
-             <a href="#" class="btn">See More </a>
+             <a href="https://github.com/jagainc" target="_blank" class="btn" data-aos="fade-up">See More Projects</a>
         </div>
     </div>
+
+    <!-- ......................achievements....... -->
+    <div id="achievements">
+        <div class="container">
+            <h1 class="subtitle" data-aos="fade-up">Achievements & Stats</h1>
+            <div class="stats-grid">
+                <div class="stat-item" data-aos="fade-up" data-aos-delay="100">
+                    <div class="stat-number" data-count="50">0</div>
+                    <div class="stat-label">Projects Completed</div>
+                </div>
+                <div class="stat-item" data-aos="fade-up" data-aos-delay="200">
+                    <div class="stat-number" data-count="3">0</div>
+                    <div class="stat-label">Years Experience</div>
+                </div>
+                <div class="stat-item" data-aos="fade-up" data-aos-delay="300">
+                    <div class="stat-number" data-count="100">0</div>
+                    <div class="stat-label">Happy Clients</div>
+                </div>
+                <div class="stat-item" data-aos="fade-up" data-aos-delay="400">
+                    <div class="stat-number" data-count="15">0</div>
+                    <div class="stat-label">Technologies Mastered</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
     <!-- ......................contact....... -->
      <div id="contact">
         <div class="container">
             <div class="row">
-                <div class="contact-left">
+                <div class="contact-left" data-aos="fade-right">
                     <h1 class="sub-title">Contact me</h1>
                     <p><i class="fa-regular fa-paper-plane"></i> Jagadeeshwaranps2005@gmail.com</p>
-                    <p><i class="fa-solid fa-square-phone"></i> 7305580875</p>
+                    <p><i class="fa-solid fa-square-phone"></i> +91 7305580875</p>
                     <div class="social-icons">
-                      <a href="https://www.facebook.com/jagadeeshwaran.jagadeeshwaran.5036/"><i class="fa-brands fa-facebook"></i></a>
-                      <a href="https://x.com/Jagadeesh_inc"><i class="fa-brands fa-square-x-twitter"></i></a>
-                      <a href="https://www.instagram.com/j4gad3esh/"><i class="fa-brands fa-instagram"></i></a>
-                      <a href="https://www.linkedin.com/in/jagadeeshwaran-p-s"><i class="fa-brands fa-linkedin"></i></a>   
+                      <a href="https://www.facebook.com/jagadeeshwaran.jagadeeshwaran.5036/" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                      <a href="https://github.com/jagainc" target="_blank"><i class="fa fa-github"></i></a>
+                      <a href="https://www.instagram.com/j4gad3esh/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                      <a href="https://www.linkedin.com/in/jagadeeshwaran-p-s" target="_blank"><i class="fa-brands fa-linkedin"></i></a>   
                     </div>
-                    <a href="" download class="btn btn2">Download cv</a>
+                    <a href="https://drive.google.com/file/d/1zQcPD0Koj894r8BZApFeew-1FzZHYxZK/view?usp=drive_link" target="_blank" class="btn btn2">Download cv</a>
                 </div>
-                <div class="contact-right">
+                <div class="contact-right" data-aos="fade-left">
                     <form name="submit-to-google-sheet">
                     <input type="text" name="Name" placeholder="Your Name" required>
                     <input type="email" name="Email" placeholder="Your email" required>
@@ -171,8 +233,23 @@
         </div>
     </div>
         <div class="copyright">
-            <p>copyright © Jagadeesh.</p>
+            <p>Copyright &copy; 2024 Jagadeesh. Made with <span class="heart">❤️</span> and lots of coffee ☕</p>
         </div>
+
+    <!-- Floating Action Button -->
+    <div class="floating-btn" id="scrollToTop">
+        <i class="fa-solid fa-arrow-up"></i>
+    </div>
+
+
+    <!-- Initialize AOS -->
+    <script>
+        AOS.init({
+            duration: 1000,
+            once: true,
+            offset: 100
+        });
+    </script>
 <script src="script.js"></script>
 </body>
 </html>
